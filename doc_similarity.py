@@ -2,7 +2,7 @@ from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
 import nltk
 
-nltk.download("punkt")
+nltk.download("punkt_tab")
 
 class ResumeDoc2VecAnalyzer:
     def __init__(self):
