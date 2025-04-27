@@ -1,0 +1,6 @@
+streamlit
+pandas
+gensim
+nltk
+huggingface_hub
+PyMuPDF
