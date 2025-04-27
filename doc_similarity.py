@@ -25,7 +25,7 @@ class ResumeDoc2VecAnalyzer:
         # Take a string containing the body you wish to tokenize, and a list of strings consisting of the tags that will apply to the resulting tokens
         try:
             tagged_doc = TaggedDocument(words=word_tokenize(doc.lower()), tags=tag)
-        except AttributeError or TypeError:
+        except (AttributeError, TypeError):
             tagged_doc = TaggedDocument(words=word_tokenize(doc), tags=tag)
         return tagged_doc
 
@@ -52,14 +52,3 @@ class ResumeDoc2VecAnalyzer:
             vecs = open("TaggedVectors", "wb")
             pickle.dump(documents, vecs)
             vecs.close()
-    
-    """I tried to make a function to save vectors but it keeps getting an EOF error."""
-    # def load_vectors(self) -> list:
-    #     # Loads the previously saved vectors
-    #         if os.path.exists("TaggedVectors"):
-    #             with open("TaggedVectors", "rb") as vecs:
-    #                 data = pickle.load(vecs)
-    #             return data
-    #         else:
-    #             print("No vector file found. Returning an empty list")
-    #             return []
