@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-from doc_similarity2 import ResumeDoc2VecAnalyzer as DocSim
+from doc_similarity import ResumeDoc2VecAnalyzer as DocSim
 from pdf_reading import extract_pdf, clean_text  # Assuming extract_pdf cleans and extracts text
 
 # Load model and preprocessed vectors
