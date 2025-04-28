@@ -33,11 +33,11 @@ The following files are included in the project
 * doc_similarity.py: Contains logic for ResumeDoc2VecAnalyzer class, which handles the tokenization and similarity analysis of the resume and job title
 * pdf_reading.py: Contains functions that extract texts from PDF uploads and cleans the extracted text
 * app.py: Streamlit app that allows user to input job title and upload a resume PDF, which then calculates the similarity between the two
-* TaggedVectors: A file that contains previously trained Doc2Vec vectors, which are used for similarity calculations.
+* TaggedVectors: The trained dataset file that contains previously trained Doc2Vec vectors, which are used for similarity calculations.
 
 ## 4. Download TaggedVectors
 
-TaggedVectors file is too large to include in the repo, so please download it from the link below and place in the project directory:
+TaggedVectors file is too large to include in the repo, so please download the trained dataset from the link below and place in the project directory:
 
 [Download TaggedVectors](https://drive.google.com/file/d/19CinPVHcqvqBgrikBKA2GEJ3Iy1Y09Mh/view?usp=sharing)
 
